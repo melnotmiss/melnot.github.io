@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML y CSS</title>
+    <style>
+        body{
+            font-family:Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4ab544;}
+        
+        header {
+            background-color: #2f732c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        h1, h2{
+            color: #ffffff
+        }
+        
+        main {
+            margin-top: 60px;
+            padding: 30px;
+        }
+
+        .grid-contenedor{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 2px;
+            padding: 10px;
+        }
+        .grid-elemento{
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(171, 171, 171);
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        ul, ol {
+            margin: 0;
+            padding: 0;
+            list-style-position: inside;
+            color: #ffffff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ffffff;
+            padding: 8px;
+            text-align: left;
+            color: #ffffff;
+        }
+        th {
+            background-color: #2f732c;
+        }
+        
+    </style>
+
+    <header>
+        <h1>Primer parcial - Melanie Mendoza</h1>
+    </header>
+    
+</head>
+<main>
+    <section>
+        <h2>Universidad Nacional Pedro Herníquez Ureña</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.603707905545!2d-69.94412828509995!3d18.484534187423963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf88c28e4bfa03%3A0x31ba494a60313c87!2sUniversidad%20Nacional%20Pedro%20Henr%C3%ADquez%20Ure%C3%B1a!5e0!3m2!1ses-419!2sdo!4v1683909759389!5m2!1ses-419!2sdo" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section>
+    <h2>HTML - Elementos más usados</h2>
+    <div class = grid-contenedor>
+        <div class="grid-elemento">Encabezados</div>
+        <div class="grid-elemento">Párrafos</div>
+        <div class="grid-elemento">Enlaces</div>
+  
+    </section>
+
+    <section>
+        <h2>CSS - Elementos más usados</h2>
+        <div class = grid-contenedor>
+            <div class="grid-elemento">Color</div>
+            <div class="grid-elemento">Fondos</div>
+            <div class="grid-elemento">Margenes</div>
+        </section>
+    
+     <section>
+        <h2>Video de YouTube sobre Programación Web</h2>
+        <iframe src="https://www.youtube.com/embed/TG6XSFeOT3g?si=x2TG0wDWF4RxUm62" allowfullscreen></iframe>
+     </section>
+
+     <section>
+
+        <h2>Lista de Elementos HTML más usados</h2>
+        <ul>
+            <li>&lt;h1&gt; - &lt;h6&gt;: Encabezados</li>
+            <li>&lt;p&gt;: Párrafo</li>
+            <li>&lt;a&gt;: Enlace</li>
+            <li>&lt;img&gt;: Imagen</li>
+            <li>&lt;div&gt;: División o contenedor</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Tabla de Propiedades CSS</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Propiedad</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>color</td>
+                    <td>Cambia el color del texto</td>
+                </tr>
+                <tr>
+                    <td>background-color</td>
+                    <td>Cambia el color de fondo del elemento</td>
+                </tr>
+                <tr>
+                    <td>margin</td>
+                    <td>Añade espacio fuera del borde del elemento</td>
+                </tr>
+                <tr>
+                    <td>padding</td>
+                    <td>Añade espacio dentro del borde del elemento</td>
+                </tr>
+                <tr>
+                    <td>border</td>
+                    <td>Define el borde del elemento</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+</main>
+
+   
+</html>
